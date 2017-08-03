@@ -1,8 +1,8 @@
 {
   "name": "lamento-message",
-  "version": "",
+  "version": "0.1.0",
   "description": "Message component",
-  "main": "src/index.js",
+  "main": "lib/lamento-message.js",
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "webpack --config build/webpack.prod.js",
