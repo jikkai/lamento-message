@@ -1,0 +1,66 @@
+@component-namespace lamento {
+  @c message {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+
+    @d body {
+      min-width: 300px;
+      height: 42px;
+      text-align: center;
+      background: #FFF;
+      border-radius: 4px;
+      box-sizing: border-box;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+
+      & i {
+        width: 42px;
+        height: 100%;
+        color: #FFF;
+        line-height: 42px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & span {
+        width: calc(100% - 42px);
+        padding: 0 8px;
+      }
+    }
+
+    @m info i {
+      background: #3498DB;
+    }
+
+    @m success i {
+      background: #2ECC71;
+    }
+
+    @m warning i {
+      background: #F1C40F;
+    }
+
+    @m danger i {
+      background: #E74C3C;
+    }
+
+    @m enter {
+      animation: messageenter 1.8s ease-in-out;
+    }
+  }
+}
+
+@keyframes messageenter {
+  0% { transform: translate(-50%, -100%); opacity: 0; }
+  30% { transform: translate(-50%, 50%); opacity: 1; }
+  70% { transform: translate(-50%, 50%); opacity: 1; }
+  100% { transform: translate(-50%, -100%); opacity: 0; }
+}

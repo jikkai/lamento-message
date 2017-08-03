@@ -1,0 +1,21 @@
+<div class="lamento-message lamento-message--enter">
+  <div class="lamento-message__body lamento-message--{{ status || defaultStatus }}">
+    <i class="lamento-message--{{ status || defaultStatus }}">
+      {{{ statusIcon[status || defaultStatus] }}}
+    </i>
+    <span>{{ content }}</span>
+  </div>
+</div>
+
+<script>
+  import { info, danger, success, warning } from './icons'
+
+  export default {
+    data () {
+      return {
+        defaultStatus: 'info',
+        statusIcon: { info, danger, success, warning }
+      }
+    }
+  }
+</script>
