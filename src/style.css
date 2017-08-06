@@ -5,6 +5,7 @@
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -100%);
+    z-index: 9999999;
 
     @d body {
       min-width: 300px;
@@ -33,6 +34,7 @@
       & span {
         width: calc(100% - 42px);
         padding: 0 8px;
+        font-size: 14px;
       }
     }
 
