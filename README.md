@@ -1,21 +1,3 @@
 # Lamento Message
 
-To start:
-
-```bash
-$ npm install
-```
-
-To develop:
-
-```bash
-$ npm run dev
-```
-
-
-
-To build for production:
-
-```bash
-$ npm run build
-```
+![Build Status](https://travis-ci.org/jikkai/lamento-message.svg?branch=master)
