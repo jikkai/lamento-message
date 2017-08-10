@@ -25,11 +25,6 @@ base.plugins = [
 
 // Rules Configuration
 base.module.rules.push({
-  test: /\.vue$/,
-  use: 'vue-loader'
-})
-
-base.module.rules.push({
   test: /\.css$/,
   use: [
     'style-loader',

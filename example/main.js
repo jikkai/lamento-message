@@ -1,8 +1,7 @@
 import Message from '../src'
 
 Message({
-  content: 'info test',
-  status: 'info'
+  content: 'info test'
 })
 
 setTimeout(_ => {

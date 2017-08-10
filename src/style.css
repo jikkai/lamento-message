@@ -38,19 +38,19 @@
       }
     }
 
-    @m info i {
+    @m info {
       background: #3498DB;
     }
 
-    @m success i {
+    @m success {
       background: #2ECC71;
     }
 
-    @m warning i {
+    @m warning {
       background: #F1C40F;
     }
 
-    @m danger i {
+    @m danger {
       background: #E74C3C;
     }
 

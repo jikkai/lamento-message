@@ -1,5 +1,5 @@
 <div class="lamento-message lamento-message--enter">
-  <div class="lamento-message__body lamento-message--{{ status || defaultStatus }}">
+  <div class="lamento-message__body">
     <i class="lamento-message--{{ status || defaultStatus }}">
       {{{ statusIcon[status || defaultStatus] }}}
     </i>
@@ -13,6 +13,7 @@
   export default {
     data () {
       return {
+        status: '',
         defaultStatus: 'info',
         statusIcon: { info, danger, success, warning }
       }

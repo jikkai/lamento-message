@@ -1,5 +1,3 @@
-'use strict'
-
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
@@ -28,15 +26,6 @@ base.plugins = [
 ]
 
 // Rules Configuration
-base.module.rules.push({
-  test: /\.vue$/,
-  loader: 'vue-loader',
-  options: {
-    extractCSS: true,
-    preserveWhitespace: false
-  }
-})
-
 base.module.rules.push({
   test: /\.css$/,
   loader: ExtractTextPlugin.extract({
