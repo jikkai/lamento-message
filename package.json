@@ -1,13 +1,13 @@
 {
   "name": "lamento-message",
-  "version": "0.1.1",
-  "description": "Message component",
+  "version": "0.2.0",
+  "description": "An easy-to-use message component",
   "main": "lib/lamento-message.js",
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "webpack --config build/webpack.prod.js",
     "dev": "nodemon build/server.js",
-    "test": "karma start test/unit/karma.conf.js --single-run"
+    "test": "npm run build && karma start test/unit/karma.conf.js --single-run"
   },
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
