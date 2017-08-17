@@ -9,7 +9,7 @@ module.exports = {
     filename: 'lamento-message.js',
     publicPath: './',
     libraryTarget: 'umd',
-    library: 'lamento-message'
+    library: 'LamentoMessage'
   },
   resolve: {
     extensions: ['.js', '.html', '.css', '.json'],

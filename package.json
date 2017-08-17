@@ -1,6 +1,6 @@
 {
   "name": "lamento-message",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "An easy-to-use message component",
   "main": "lib/lamento-message.js",
   "scripts": {
